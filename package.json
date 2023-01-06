@@ -1,34 +1,29 @@
 {
-  "name": "ctf-json-field-editor-app",
+  "name": "ctf-complex-json-field-editor-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@contentful/app-sdk": "^3.40.1",
-    "@contentful/field-editor-reference": "^2.20.10",
-    "@contentful/field-editor-single-line": "^0.15.4",
+    "@contentful/app-sdk": "4.14.1",
+    "@contentful/f36-components": "4.24.0",
+    "@contentful/f36-tokens": "4.0.1",
+    "@contentful/field-editor-reference": "^2.21.2",
+    "@contentful/field-editor-single-line": "^0.15.6",
     "@contentful/field-editor-test-utils": "^0.17.3",
-    "@contentful/forma-36-fcss": "^0.3.4",
-    "@contentful/forma-36-react-components": "^3.98.4",
-    "@contentful/forma-36-tokens": "^0.11.1",
-    "@json-editor/json-editor": "^2.5.4",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.1.1",
-    "@testing-library/user-event": "^13.2.1",
-    "@types/jest": "^27.0.2",
-    "@types/json-schema": "^7.0.9",
-    "@types/node": "^16.10.1",
-    "@types/react": "^17.0.24",
-    "@types/react-dom": "^17.0.9",
+    "@contentful/forma-36-fcss": "^0.3.5",
+    "@contentful/forma-36-react-components": "^3.100.7",
+    "@contentful/forma-36-tokens": "^0.11.2",
+    "@contentful/react-apps-toolkit": "1.2.14",
+    "@json-editor/json-editor": "^2.8.0",
     "consola": "^2.15.3",
-    "cross-env": "^7.0.3",
-    "immer": "^9.0.6",
+    "contentful-management": "10.26.0",
+    "emotion": "10.0.27",
+    "immer": "^9.0.17",
     "lodash": "^4.17.21",
-    "prop-types": "^15.7.2",
+    "prop-types": "^15.8.1",
     "react": "^17.0.2",
-    "react-beautiful-dnd": "^13.1.0",
+    "react-beautiful-dnd": "^13.1.1",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.4.3",
+    "react-scripts": "5.0.1",
     "use-immer": "^0.6.0"
   },
   "scripts": {
@@ -39,7 +34,7 @@
     "upload": "contentful-app-scripts upload --bundle-dir ./build",
     "upload-ci": "contentful-app-scripts upload --ci --bundle-dir ./build  --organization-id $CONTENTFUL_ORG_ID --definition-id $CONTENTFUL_APP_DEF_ID --token $CONTENTFUL_ACCESS_TOKEN"
   },
-  "eslintConfig": {
+  "_eslintConfig": {
     "extends": "react-app"
   },
   "browserslist": {
@@ -55,13 +50,25 @@
     ]
   },
   "devDependencies": {
-    "@contentful/app-scripts": "^0.12.56",
+    "@contentful/app-scripts": "^0.12.67",
     "@contentful/eslint-config-extension": "0.2.0",
-    "@types/lodash": "^4.14.175",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^12.1.5",
+    "@testing-library/user-event": "^13.5.0",
+    "@tsconfig/create-react-app": "1.0.3",
+    "@types/jest": "^27.5.2",
+    "@types/json-schema": "^7.0.11",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^16.18.11",
+    "@types/react": "^17.0.52",
+    "@types/react-dom": "^17.0.18",
     "contentful-management": "^7.41.0",
-    "eslint-config-prettier": "^6.11.0",
+    "cross-env": "^7.0.3",
+    "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-import": "^2.22.0"
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4"
   },
   "homepage": "."
 }

@@ -3,7 +3,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: { project: './tsconfig.json' },
   env: { es6: true },
-  ignorePatterns: ['node_modules', 'build', 'coverage'],
+  ignorePatterns: ['node_modules', 'build', 'coverage','*.d.ts'],
   plugins: ['import', 'eslint-comments'],
   extends: [
     //    require.resolve('@contentful/eslint-config-extension'),
@@ -29,6 +29,7 @@ module.exports = {
     '@typescript-eslint/no-empty-interface': 'off',
     'no-debugger': 'warn', // TODO: make sure to re-enable
     'no-constant-condition': 'warn',
+    'import/no-unresolved': 'warn',
     'import/order': ['off', { 'newlines-between': 'never', alphabetize: { order: 'asc' } }],
     'sort-imports': ['warn', { ignoreDeclarationSort: true, ignoreCase: true }],
   },

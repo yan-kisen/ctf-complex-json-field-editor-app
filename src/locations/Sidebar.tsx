@@ -19,7 +19,7 @@ const Sidebar = ({ sdk }: SidebarProps) => {
   const jsonFieldId = instanceParams.jsonFieldId || 'jsonData'
   const loadSampleData = instanceParams.loadSampleData || false
   const isDebug = instanceParams.isDebug || false
-  const isArray = instanceParams.isArray || false
+  const isArray = instanceParams.isArray || false // TODO: separate Object/Array field editors into separate Apps to prevent having to set this globally as an instance param
 
   const defaultValue = isArray ? [] : {}
   const schemaRefField = sdk.entry.fields[schemaRefFieldId]
