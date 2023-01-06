@@ -62,6 +62,7 @@ export type AppInstallationParameters = {
 
 export type AppInstanceParameters = {
   schemaRefFieldId?: string
+  schemaRefEntryId?: string
   jsonFieldId?: string
   loadSampleData?: boolean
   isDebug?: boolean
