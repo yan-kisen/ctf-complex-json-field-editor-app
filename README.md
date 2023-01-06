@@ -1,3 +1,14 @@
+# ctf-complex-json-field-editor-app
+
+A Contentful App for allowing JSON field editor to be defined via JSON Schema.
+
+Documentation forthcoming...
+
+See [CONTENTFUL_CONFIG.md](./_docs/CONTENTFUL_CONFIG.md)
+
+----
+
+
 This project was bootstrapped with [Create Contentful App](https://github.com/contentful/create-contentful-app).
 
 ## Available Scripts
