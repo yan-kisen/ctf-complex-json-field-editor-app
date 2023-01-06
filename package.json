@@ -1,0 +1,67 @@
+{
+  "name": "ctf-json-field-editor-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@contentful/app-sdk": "^3.40.1",
+    "@contentful/field-editor-reference": "^2.20.10",
+    "@contentful/field-editor-single-line": "^0.15.4",
+    "@contentful/field-editor-test-utils": "^0.17.3",
+    "@contentful/forma-36-fcss": "^0.3.4",
+    "@contentful/forma-36-react-components": "^3.98.4",
+    "@contentful/forma-36-tokens": "^0.11.1",
+    "@json-editor/json-editor": "^2.5.4",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.1",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.2",
+    "@types/json-schema": "^7.0.9",
+    "@types/node": "^16.10.1",
+    "@types/react": "^17.0.24",
+    "@types/react-dom": "^17.0.9",
+    "consola": "^2.15.3",
+    "cross-env": "^7.0.3",
+    "immer": "^9.0.6",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-beautiful-dnd": "^13.1.0",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.4.3",
+    "use-immer": "^0.6.0"
+  },
+  "scripts": {
+    "start": "cross-env BROWSER=none react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "upload": "contentful-app-scripts upload --bundle-dir ./build",
+    "upload-ci": "contentful-app-scripts upload --ci --bundle-dir ./build  --organization-id $CONTENTFUL_ORG_ID --definition-id $CONTENTFUL_APP_DEF_ID --token $CONTENTFUL_ACCESS_TOKEN"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@contentful/app-scripts": "^0.12.56",
+    "@contentful/eslint-config-extension": "0.2.0",
+    "@types/lodash": "^4.14.175",
+    "contentful-management": "^7.41.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  },
+  "homepage": "."
+}

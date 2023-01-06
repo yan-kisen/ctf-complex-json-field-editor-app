@@ -1,0 +1,35 @@
+module.exports = {
+  root: true,
+  parser: '@typescript-eslint/parser',
+  parserOptions: { project: './tsconfig.json' },
+  env: { es6: true },
+  ignorePatterns: ['node_modules', 'build', 'coverage'],
+  plugins: ['import', 'eslint-comments'],
+  extends: [
+    //    require.resolve('@contentful/eslint-config-extension'),
+    //    require.resolve('@contentful/eslint-config-extension/jest'),
+    //    require.resolve('@contentful/eslint-config-extension/jsx-a11y'),
+    //    require.resolve('@contentful/eslint-config-extension/react')
+    'eslint:recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
+    'plugin:eslint-comments/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+    'prettier/@typescript-eslint',
+  ],
+  rules: {
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'eslint-comments/disable-enable-pair': ['warn', { allowWholeFile: true }],
+    'eslint-comments/no-unused-disable': 'warn',
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars':'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-empty-interface': 'off',
+    'no-debugger': 'warn', // TODO: make sure to re-enable
+    'no-constant-condition': 'warn',
+    'import/order': ['off', { 'newlines-between': 'never', alphabetize: { order: 'asc' } }],
+    'sort-imports': ['warn', { ignoreDeclarationSort: true, ignoreCase: true }],
+  },
+}
